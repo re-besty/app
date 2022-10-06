@@ -14,7 +14,8 @@
   ],
   "author": "",
   "peerDependencies": {
-    "react-native": "0.61.5",
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "react-native": "0.67.4",
+    "react-redux": "^8.0.2"
   }
 }
