@@ -13,14 +13,11 @@ const GetMemberReview = (props) => {
   useEffect(() => {
     const api = getApi(props.config);
     api.customRequest(
-      // 'wp-json/buddyboss/v1/members', // success
       'wp-json/buddyboss/v1/members/' + props.user.id, // success
       'get'
     ).then(response => setApiResponse(response.data.bt_review));
   }, []);
 
-  // return <Text>showing user id after header, {props.user.id}</Text>
-  // return <Text>平均レビュー点数: {JSON.stringify(apiResponse)}/5点</Text>
   return (
     <View>
     { apiResponse.ave
@@ -30,9 +27,6 @@ const GetMemberReview = (props) => {
       : <></>
     }
     </View>
-    // <Text style={styles.container}>
-    //   平均レビュー点数: <Text style={styles.pointsWrapper}><Text style={styles.points}>{JSON.stringify(apiResponse)}</Text>/5点</Text>
-    // </Text>
   );
 }
 
@@ -47,10 +41,9 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   pointsWrapper: {
-    fontSize: "150%"
+    fontWeight: "bold",
   },
   points: {
-    fontWeight: "bold",
     color: "#cc9a06"
   }
 });
