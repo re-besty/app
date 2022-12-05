@@ -38,7 +38,8 @@ const mapStateToProps = (state) => ({
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-    textAlign: "center"
+    textAlign: "center",
+    color: '#000000'
   },
   pointsWrapper: {
     fontWeight: "bold",
