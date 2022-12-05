@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   container: {
     padding: 10,
     textAlign: "center",
-    color: '#000000'
+    color: "#000000"
   },
   pointsWrapper: {
     fontWeight: "bold",
